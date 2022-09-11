@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A91944A7-19FF-48F0-86FD-905C1D8A7735}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Cleansing_App.My.MyApplication</StartupObject>
+    <RootNamespace>Cleansing_App</RootNamespace>
+    <AssemblyName>Cleansing_App</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Cleansing_App.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42024,42032,42036,42099</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cleansing_App.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42024,42032,42036,42099</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>69EED691BA5FD949FDA3B6AFCBBCF52E34F8B62D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Cleansing_App_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net40\ClosedXML.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Entity.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ClosedXML" />
+    <Import Include="ClosedXML.Attributes" />
+    <Import Include="ClosedXML.Excel" />
+    <Import Include="ClosedXML.Utils" />
+    <Import Include="Microsoft.SqlServer" />
+    <Import Include="Microsoft.SqlServer.Server" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountPayments.vb" />
+    <Compile Include="Checking.Designer.vb">
+      <DependentUpon>Checking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Checking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckingMutasi.Designer.vb">
+      <DependentUpon>CheckingMutasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckingMutasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionSQL.vb" />
+    <Compile Include="Detail Payment.Designer.vb">
+      <DependentUpon>Detail Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Detail Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailBalanced.Designer.vb">
+      <DependentUpon>DetailBalanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetailBalanced.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailCIF.Designer.vb">
+      <DependentUpon>DetailCIF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetailCIF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailLoan.Designer.vb">
+      <DependentUpon>DetailLoan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetailLoan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdit.Designer.vb">
+      <DependentUpon>FormEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateReport.Designer.vb">
+      <DependentUpon>GenerateReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import Draft.Designer.vb">
+      <DependentUpon>Import Draft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Import Draft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportDatabase.Designer.vb">
+      <DependentUpon>ImportDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImportDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingStatus.Designer.vb">
+      <DependentUpon>LoadingStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan.Designer.vb">
+      <DependentUpon>Loan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonitoringBalance.Designer.vb">
+      <DependentUpon>MonitoringBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MonitoringBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Payment.Designer.vb">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCount.Designer.vb">
+      <DependentUpon>PaymentCount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentDuedate.Designer.vb">
+      <DependentUpon>PaymentDuedate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentDuedate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reconsile Payment.Designer.vb">
+      <DependentUpon>Reconsile Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reconsile Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplitForm.Designer.vb">
+      <DependentUpon>SplitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplitForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Summary.Designer.vb">
+      <DependentUpon>Summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Summary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryLoan.Designer.vb">
+      <DependentUpon>SummaryLoan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryLoan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checking.resx">
+      <DependentUpon>Checking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckingMutasi.resx">
+      <DependentUpon>CheckingMutasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detail Payment.resx">
+      <DependentUpon>Detail Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailBalanced.resx">
+      <DependentUpon>DetailBalanced.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailCIF.resx">
+      <DependentUpon>DetailCIF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailLoan.resx">
+      <DependentUpon>DetailLoan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdit.resx">
+      <DependentUpon>FormEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateReport.resx">
+      <DependentUpon>GenerateReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import Draft.resx">
+      <DependentUpon>Import Draft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportDatabase.resx">
+      <DependentUpon>ImportDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingStatus.resx">
+      <DependentUpon>LoadingStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan.resx">
+      <DependentUpon>Loan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitoringBalance.resx">
+      <DependentUpon>MonitoringBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCount.resx">
+      <DependentUpon>PaymentCount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentDuedate.resx">
+      <DependentUpon>PaymentDuedate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reconsile Payment.resx">
+      <DependentUpon>Reconsile Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitForm.resx">
+      <DependentUpon>SplitForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summary.resx">
+      <DependentUpon>Summary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryLoan.resx">
+      <DependentUpon>SummaryLoan.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cleansing_App_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

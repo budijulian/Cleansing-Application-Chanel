@@ -1,0 +1,7 @@
+SQLExpress
+sa
+shinhan@1
+'Public SQLConnectionString As String = "Server=HPQ-7700-2176B\SQLEXPRESS;Database=DB_MASTER;User Id=sa;Password=shinhan@1"
+
+
+cleansing ujicoba check 4 : dtakedown 292
